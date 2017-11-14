@@ -1,0 +1,26 @@
+<form class="well" (submit)="addTip($event)">
+    <div class="form-group">
+        <input [(ngModel)]="date" name="date" type="text" class="form-control" placeholder="Add date...">
+        <input [(ngModel)]="content" name="content" type="text" class="form-control" placeholder="Add tip...">
+        <input type="submit">
+    </div>
+</form>
+
+<div class="tip-list">
+    <div *ngFor="let tip of tips">
+        <div class="col-md-1">
+            <input type="checkbox" [checked]="tip.isDone" (click)="updateStatus(tip)">
+        </div>
+        <div class="col-md-3">
+            {{ tip.date }}
+        </div>
+        <div class="col-md-6">
+            {{ tip.content }}
+        </div>
+        <div class="col-md-2">
+            <input type="button" (click)="deleteTip(tip._id)" value="Delete" class="btn btn-danger">
+        </div>
+        <br><br>
+    </div>
+    
+</div>

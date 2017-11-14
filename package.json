@@ -1,7 +1,9 @@
 {
   "name": "sandbox",
   "version": "0.0.0",
+  "description": "mean sandbox test for atl",
   "license": "MIT",
+  "main": "server.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -21,7 +23,12 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongojs": "^2.4.1",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
